@@ -1,0 +1,41 @@
+.modal-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* SHOW */
+.modal-container:has(:checked) {
+  background-color: #0005;
+  backdrop-filter: blur(10px);
+  pointer-events: all;
+}
+
+.modal-container .modal {
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 1em;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+/* SHOW */
+.modal-container .modal-radio:checked + .modal {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.modal-radio {
+  display: none;
+}

@@ -1,0 +1,25 @@
+nav {
+  width: max-content;
+  background-color: var(--green);
+  margin: auto;
+  border-radius: 50px;
+  overflow-y: hidden;
+  position: sticky;
+  top: 5px;
+  display: flex;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 2em;
+  height: 3.5rem;
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover {
+  background-color: var(--orange);
+}

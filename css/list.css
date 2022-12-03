@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  font-size: 0.8em;
+}
+
+.pagination * {
+  display: block;
+  padding: 0.5em 1.2em;
+}
+
+.pagination :is(.current, .prev, .next) {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.pagination a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.pagination a:hover {
+  background-color: var(--orange) !important;
+  color: var(--white);
+}
+
+.pagination .prev {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.pagination .next {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.pagination .disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: var(--gray);
+}
