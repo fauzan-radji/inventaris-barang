@@ -1,3 +1,4 @@
+<?php include 'utils.php' ?>
 <!DOCTYPE html>
 <html lang="id">
 
@@ -8,22 +9,27 @@
   <title>Beranda</title>
 
   <?php include 'partials/css.php' ?>
-  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
-  <?php include 'partials/navigasi.php' ?>
-
+<body class="d-flex flex-column justify-content-center text-center">
   <div class="container">
-    <header>
-      <h1>Toko Serba Guna</h1>
-    </header>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 style="font-size: 3.5rem;">Inventaris Barang</h1>
+      </div>
+    </div>
 
-    <main>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magni dicta et. Eum voluptatem in, non nihil inventore, animi distinctio at aspernatur, ullam repudiandae minima? Itaque voluptatum repellendus delectus odit?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et saepe dolor hic deserunt, laudantium maxime ad odio accusantium voluptatum quasi porro harum maiores, cumque deleniti mollitia numquam vitae praesentium voluptates tempora! Quae dolor laboriosam explicabo vel ipsam reiciendis eaque. Placeat odio optio veritatis, nemo laboriosam mollitia impedit, voluptatem consequuntur quia minima dolores! Modi nostrum repellendus sunt veniam fugiat reprehenderit consequatur accusamus quasi, harum natus, delectus cupiditate excepturi non? Tempora, earum.</p>
-    </main>
+    <div class="row justify-content-center my-5 pt-3 lh-4" style="font-size: 1.2rem;">
+      <?php foreach (env('descriptions') as $paragraph) : ?>
+        <div class="col-md-8">
+          <p><?= $paragraph ?></p>
+        </div>
+      <?php endforeach ?>
+    </div>
   </div>
+
+  <?php include 'partials/navigasi.php' ?>
 </body>
 
 </html>

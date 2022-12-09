@@ -5,5 +5,9 @@ const ENV = [
   "db_pass" => "",
   "db_name" => "uas_pweb",
 
-  "records_per_page" => 9
+  "records_per_page" => 3,
+  "descriptions" => [
+    "Selamat datang di website inventaris barang! Solusi terbaik untuk mengelola inventaris barang Anda dengan mudah dan efisien.",
+    "Dengan menggunakan sistem inventaris barang ini, Anda dapat mencatat, mengatur, dan memantau semua barang yang ada di gudang atau tempat penyimpanan Anda dengan mudah."
+  ]
 ];

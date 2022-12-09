@@ -72,7 +72,7 @@ $success = getSuccess();
       </div>
 
       <div class="d-flex justify-content-end gapx-2">
-        <label class="btn btn-secondary" for="modal-radio-tambah">Batal</label>
+        <button class="btn btn-secondary" type="reset">Reset</button>
         <button class="btn btn-primary" type="submit" name="submit">Simpan</button>
       </div>
     </form>

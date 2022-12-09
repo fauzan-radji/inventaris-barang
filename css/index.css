@@ -1,12 +1,10 @@
-header {
-  width: 100%;
-  height: 80vh;
-  background-image: url("../img/bg.png");
+body {
+  height: 100vh;
+  background-image: linear-gradient(var(--black-alpha), var(--black-alpha)),
+    url("../img/bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
 
-header h1 {
-  text-align: center;
+  color: var(--white);
 }
