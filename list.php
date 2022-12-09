@@ -6,7 +6,7 @@ $current_page = 1;
 if (isset($_GET['page'])) $current_page = (int)$_GET['page'];
 $records_per_page = env("records_per_page", 5);
 
-$daftar_barang = read("barang", $records_per_page, ($current_page - 1) * $records_per_page);
+$daftar_barang = read("barang", true, $records_per_page, ($current_page - 1) * $records_per_page);
 $total_barang = countRow("barang");
 $max_page = ceil($total_barang / $records_per_page);
 $x = 2;

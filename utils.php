@@ -38,10 +38,12 @@ function create($tableName, $data, $dataTypes)
   return mysqli_query($conn, "INSERT INTO $tableName $fields VALUES $values");
 }
 
-function read($tableName, $limit = 0, $offset = 0)
+function read($tableName, $descending = false, $limit = 0, $offset = 0)
 {
   global $conn;
   $query = "SELECT * FROM $tableName";
+
+  if ($descending) $query .= ' ORDER BY id DESC';
 
   if ($limit > 0) {
     $query .= " LIMIT $limit";
