@@ -3,7 +3,7 @@ const ENV = [
   "db_host" => "localhost",
   "db_user" => "root",
   "db_pass" => "",
-  "db_name" => "inventory_barang",
+  "db_name" => "inventaris_barang",
 
   "records_per_page" => 6,
   "descriptions" => [

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.29, for Linux (x86_64)
 --
--- Host: localhost    Database: inventory_barang
+-- Host: localhost    Database: inventaris_barang
 -- ------------------------------------------------------
 -- Server version	8.0.31-0ubuntu0.22.04.1
 
